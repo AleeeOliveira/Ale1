@@ -1,0 +1,26 @@
+#include <stdio.h>
+    
+int main() {
+     
+char T; //variaveis
+double matriz[12][12], s=0,m=0; //variaveis
+int linha,coluna,L; // variaveis
+scanf("%d %c", &L, &T);
+if(L>=0&&L<=11){
+for(linha=0;linha<12;linha++){ //solicitar os numeros da matriz
+    for(coluna=0;coluna<12;coluna++){
+        scanf("%lf", &matriz[linha][coluna]);
+        if(coluna==L)
+        s=s+matriz[linha][coluna]; //adicionar os numeros digitados a variavel 'S' se estiverem na linha escolhida 
+    }
+}
+m=s/12.0; //media recebe soma dividido por 12
+if(T=='S')
+printf("%.1lf\n", s);
+   
+else if(T=='M')
+printf("%.1lf\n", m);
+}
+ 
+    return 0;
+}
