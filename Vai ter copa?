@@ -1,0 +1,14 @@
+#include <stdio.h>
+  
+int main() {
+  
+    int A;  // Variavel
+    while(scanf("%d", &A) != EOF){ // EOF se você digitar um numero inferior a zero ele para o programa porque esta dentro do While. 
+    if(A == 0){ // Se o numero for Zero ira aparecer vai ter copa.
+    printf("vai ter copa!\n"); 
+    }else{     // Se for qualquer numero diferente de zero Vai ter Duas.
+    printf("vai ter duas!\n");
+    }
+    }
+    return 0;
+}
