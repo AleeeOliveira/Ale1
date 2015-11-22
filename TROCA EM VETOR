@@ -1,0 +1,18 @@
+#include <stdio.h>
+    
+int main() {
+ 
+int x,z,y,v[20]; //variaveis
+for (z=0;z<20;z++){  //recebendo os numeros no vetor
+    scanf("%d",&v[z]);
+} 
+for (y=0;y<10;y++){ //inverte as posições
+    x=v[y];
+    v[y]=v[19-y];
+    v[19-y]=x;
+}
+for (z=0;z<20;z++){ //apresentação dos numeros invertidos
+    printf("N[%d] = %d\n",z,v[z]);
+}
+    return 0;
+}
